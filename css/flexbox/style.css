@@ -1,0 +1,24 @@
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-evenly;
+    margin: 0 auto;
+    width:100%
+    
+}.c1{
+    background-color: aqua;
+    border: 1px black solid;
+}.c2{
+    background-color: aliceblue;
+    border: 1px black solid;
+}.c3{
+    background-color: brown;
+    border: 1px black solid;
+}.c4{
+    background-color: coral;
+    border: 1px black solid;
+}div{
+    width: 20%;
+    height: 100px;
+}
