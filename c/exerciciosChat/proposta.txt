@@ -1,0 +1,24 @@
+Claro, aqui estão alguns exercícios de nível básico, médio e avançado em C:
+Nível Básico:
+
+    Escreva um programa em C para calcular a soma de dois números.
+    Escreva um programa em C para encontrar o maior entre três números.
+    Escreva um programa em C para verificar se um número é par ou ímpar.
+    Escreva um programa em C para converter temperatura de Celsius para Fahrenheit.
+    Escreva um programa em C para inverter uma string.
+
+Nível Médio:
+
+    Escreva um programa em C para encontrar o fatorial de um número.
+    Escreva um programa em C para verificar se uma string é um palíndromo.
+    Escreva um programa em C para ordenar um array de inteiros em ordem crescente.
+    Escreva um programa em C para encontrar os números primos dentro de um intervalo especificado.
+    Escreva um programa em C para calcular o número de dias entre duas datas.
+
+Nível Avançado
+
+    Escreva um programa em C para implementar uma lista encadeada.
+    Escreva um programa em C para multiplicar duas matrizes.
+    Escreva um programa em C para implementar um algoritmo de ordenação rápida (quicksort).
+    Escreva um programa em C para encontrar o caminho mais curto em um grafo ponderado usando o algoritmo de Dijkstra.
+    Escreva um programa em C para implementar um interpretador de uma linguagem de programação simples.
