@@ -10,6 +10,7 @@ struct aluno
 typedef struct aluno aluno;
 
 void add(aluno listadealunos[], int *numAluno)
+
 {
     if (*numAluno < MAX_ALUNOS)
     {
@@ -25,6 +26,34 @@ void add(aluno listadealunos[], int *numAluno)
         printf("Limite máximo de alunos atingido.\n");
     }
 }
+void ler(aluno listadealunos[], int numAluno)
+{
+    printf("alunos cadastrados\n\n");
+    for (int i = 0; i < numAluno; i++)
+    {
+        printf("Aluno %i\n", i + 1);
+        printf("nome: %s\n", listadealunos[i].nome);
+        printf("idade: %i\n", listadealunos[i].idade);
+        printf("\n");
+    }
+}
+void deletar(aluno listadealunos[], int *numAluno)
+{
+    int index;
+    printf("digite o numero do aluno desejado \n");
+    scanf("%i", &index);
+
+    if (index < 1 || index >= *numAluno)
+    {
+        printf("erro no index do aluno");
+    }
+    for (int i = index - 1; i < *numAluno - 1; i++)
+    {
+        listadealunos[i] = listadealunos[i + 1];
+        // ex: a informação do 4 vai pro 3  e assim em diante
+    }
+    (*numAluno)--;
+}
 int main()
 {
 
@@ -33,11 +62,13 @@ int main()
     aluno listadealunos[MAX_ALUNOS];
     do
     {
-        printf("ola bem vindo ao novo cadastro de alunos , dessa vez menos burro\n");
-        printf("1-cadastrar\n");
-        printf("2-ver cadastrados\n");
-        printf("3-deletar\n");
-        printf("4-sair\n");
+        printf("\nOlá, bem-vindo ao novo cadastro de alunos!\n");
+        printf("1 - Cadastrar aluno\n");
+        printf("2 - Ver alunos cadastrados\n");
+        printf("3 - Deletar aluno\n");
+        printf("4 - Editar aluno\n");
+        printf("5 - Sair\n");
+        printf("Escolha uma opção: ");
         scanf("%i", &tipoOpe);
         switch (tipoOpe)
         {
@@ -45,38 +76,23 @@ int main()
             add(listadealunos, &numAluno);
             break;
         case 2:
-            printf("alunos cadastrados\n");
-            for (int i = 0; i < numAluno; i++)
-            {
-                printf("aluno %i\n", i + 1);
-                printf("nome: %s\n", listadealunos[i].nome);
-                printf("idade: %i\n", listadealunos[i].idade);
-                printf("\n");
-            }
-
+            ler(listadealunos, numAluno);
             break;
         case 3:
-            int index;
-            printf("digite o numero do aluno desejado \n");
-            scanf("%i", &index);
-            if (index < 0 || index >= numAluno)
-            {
-                printf("erro no index do aluno");
-            }
-            for (int i = index; i < numAluno - 1; i++)
-            {
-                listadealunos[i] = listadealunos[i + 1];
-            }
-            numAluno--;
+            deletar(listadealunos, &numAluno);
             break;
         case 4:
+            // editar
+            printf("ainda não implementado");
+            break;
+        case 5:
             printf("Saindo \n");
             break;
         default:
             printf("erro operação invalida\n");
             break;
         }
-    } while (tipoOpe != 4);
+    } while (tipoOpe != 5);
 
     return 0;
 }
