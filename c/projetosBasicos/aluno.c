@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #define MAX_STR_LENGTH 100
 #define MAX_ARRAY_LENGTH 10
@@ -29,6 +30,7 @@ int main()
             index++;
             break;
         case 2:
+            system("clear");
             for (int i = 0; i < index; i++)
             {
                 printf("Aluno %d: %s\n", i + 1, array[i]);
