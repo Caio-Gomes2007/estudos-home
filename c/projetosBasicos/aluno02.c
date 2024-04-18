@@ -54,10 +54,26 @@ void deletar(aluno listadealunos[], int *numAluno)
     }
     (*numAluno)--;
 }
+void editar(aluno listadealunos[],int *numAluno){
+    int index02;
+    printf("Digite o número do aluno que deseja editar: ");
+    scanf("%i", &index02);
+
+    if (index02 < 1 || index02 > *numAluno) {
+        printf("Erro: Índice inválido.\n");
+    } else {
+        printf("Digite o novo nome do aluno: ");
+        scanf("%s", listadealunos[index02 - 1].nome);
+        printf("Digite a nova idade do aluno: ");
+        scanf("%i", &listadealunos[index02 - 1].idade);
+        printf("Aluno editado com sucesso!\n");
+    }
+}
 int main()
 {
 
     int tipoOpe;
+    int index02;
     int numAluno = 0;
     aluno listadealunos[MAX_ALUNOS];
     do
@@ -65,8 +81,8 @@ int main()
         printf("\nOlá, bem-vindo ao novo cadastro de alunos!\n");
         printf("1 - Cadastrar aluno\n");
         printf("2 - Ver alunos cadastrados\n");
-        printf("3 - Deletar aluno\n");
-        printf("4 - Editar aluno\n");
+        printf("3 - Editar aluno\n");
+        printf("4 - Deletar aluno\n");
         printf("5 - Sair\n");
         printf("Escolha uma opção: ");
         scanf("%i", &tipoOpe);
@@ -79,12 +95,12 @@ int main()
             ler(listadealunos, numAluno);
             break;
         case 3:
-            deletar(listadealunos, &numAluno);
+            editar(listadealunos,&numAluno);
             break;
         case 4:
-            // editar
-            printf("ainda não implementado");
-            break;
+            deletar(listadealunos, &numAluno);
+    break;
+
         case 5:
             printf("Saindo \n");
             break;
