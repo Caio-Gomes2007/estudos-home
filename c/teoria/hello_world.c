@@ -1,6 +1,7 @@
 #include <stdio.h>
-//oi sou um comentario
-int main() {
+// oi sou um comentario
+int main()
+{
     printf("hellow world");
     return 0;
 };
