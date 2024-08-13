@@ -1,0 +1,35 @@
+Aqui estão 10 exercícios básicos sobre arrays em C para ajudar a praticar e reforçar o entendimento desse conceito:
+
+### Exercício 1: Soma de Elementos de um Array
+Escreva um programa em C que leia 5 números inteiros de um array e calcule a soma de todos os elementos.
+
+### Exercício 2: Encontrar o Maior e o Menor Elemento
+Escreva um programa em C que leia 10 números inteiros em um array e encontre o maior e o menor elemento presente no array.
+
+### Exercício 3: Cálculo da Média de um Array
+Escreva um programa em C que leia 10 números inteiros e calcule a média dos valores do array.
+
+### Exercício 4: Contar Números Pares e Ímpares
+Escreva um programa em C que leia 10 números inteiros e conte quantos são pares e quantos são ímpares.
+
+### Exercício 5: Reverter um Array
+Escreva um programa em C que leia 5 números inteiros e imprima os números na ordem inversa.
+
+### Exercício 6: Verificar se um Array é Palíndromo
+Escreva um programa em C que leia 5 números inteiros e verifique se eles formam um palíndromo (os números são os mesmos de frente para trás e de trás para frente).
+
+### Exercício 7: Remover Duplicatas de um Array
+Escreva um programa em C que leia 10 números inteiros, remova os valores duplicados e exiba o array resultante.
+
+### Exercício 8: Ordenação de um Array (Bubble Sort)
+Escreva um programa em C que leia 10 números inteiros e os ordene em ordem crescente usando o algoritmo Bubble Sort.
+
+### Exercício 9: Encontrar a Frequência de um Elemento
+Escreva um programa em C que leia 10 números inteiros e um número adicional, e conte quantas vezes esse número adicional aparece no array.
+
+### Exercício 10: Rotacionar um Array à Direita
+Escreva um programa em C que leia 5 números inteiros e rotacione o array uma posição à direita. Por exemplo, o array `{1, 2, 3, 4, 5}` deve se tornar `{5, 1, 2, 3, 4}`.
+
+---
+
+Esses exercícios cobrem uma variedade de operações básicas com arrays, como soma, ordenação, busca, manipulação de elementos, e são ótimos para praticar conceitos fundamentais de programação em C.

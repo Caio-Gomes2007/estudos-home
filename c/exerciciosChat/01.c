@@ -1,20 +1,9 @@
 #include <stdio.h>
-// Escreva um programa em C para calcular a soma de dois números.
+int main(){
+  int x=10;
+  int y=5;
+  int result=x+y;
+  printf("%i\n",result);
+  return 0;
 
-void soma(int num1, int num2)
-{
-    int result = num1 + num2;
-    printf("%i \n", result);
-}
-
-int main()
-{
-    int num1, num2;
-    printf("Digite o primeiro número: \n");
-    scanf("%i", &num1);
-
-    printf("Digite o segundo número: \n");
-    scanf("%i", &num2);
-    soma(num1, num2);
-    return 0;
 }

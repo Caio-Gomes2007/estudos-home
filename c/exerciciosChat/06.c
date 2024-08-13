@@ -1,22 +1,16 @@
 #include <stdio.h>
-// Escreva um programa em C para encontrar o fatorial de um número.
-
-int fat(int num)
-{
-    int fatorial = 1;
-    for (int i = 1; i <= num; i++)
-    {
-        fatorial = fatorial * i;
+int fatorial(int x){
+    int i;
+    int fat =1;
+    for(i=x;i>1;i--){
+        fat =fat*i;
     }
-    return fatorial;
+        printf("%i",fat);
 }
-
-int main()
-{
-    int num;
+int main(){
+    int x;
     printf("digite um numero\n");
-    scanf("%i", &num);
-    int result = fat(num);
-    printf("%i\n", result);
+    scanf("%i",&x);
+    fatorial(x);
     return 0;
-} // parece erro mas ta certo
+}

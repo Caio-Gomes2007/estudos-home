@@ -1,22 +1,19 @@
 #include <stdio.h>
-// Escreva um programa em C para verificar se um número é par ou ímpar.
-int par(int num)
-{
-    if (num % 2 == 0)
-    {
-        printf("é par\n");
-    }
-    else
-    {
-        printf("é impar\n");
-    };
+
+int  ParORImpar(int x){
+    if(x%2==0){
+      printf("é par\n");
+  }else {
+      printf("é impar\n");
+  }
 }
 
-int main()
-{
-    int num;
-    printf("Digite um número\n");
-    scanf("%i", &num);
-    par(num);
-    return 0;
+
+int main(){
+
+    int x;
+    printf("Digite um numero para a verificação\n");
+    scanf("%i",&x);
+    ParORImpar(x);
+
 }

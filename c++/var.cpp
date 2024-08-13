@@ -7,7 +7,7 @@ int main(){
     float flutuante=1.5;
     const int constante=666;
     string myText = "\ntem suporte oficial para string krl";
-    //imprindo variaveis
+    //imprindo variaveis 
 
     cout << num;
     cout << letra;

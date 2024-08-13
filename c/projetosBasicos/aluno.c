@@ -3,7 +3,6 @@
 #include <string.h>
 #include <stdlib.h>
 #define MAX_ALUNOS 50
-
 struct aluno
 {
     int idade;

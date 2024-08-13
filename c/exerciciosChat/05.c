@@ -1,23 +1,22 @@
 #include <stdio.h>
 #include <string.h>
-// Escreva um programa em C para inverter uma string.
-void inverterString(char str[])
-{
-    int tamanho = strlen(str);
-    int i, j;
-    for (i = 0, j = tamanho - 1; i < j; i++, j--)
-    {
-        char temp = str[i];
-        str[i] = str[j];
-        str[j] = temp;
-    }
+void invertString(char strr[]){
+  int tamanho = strlen(strr);
+  int i;
+  int j = tamanho -1;
+  for (int i=0;i<j ;i++,j--){
+	  char temp = strr[i];
+	  strr[i]= strr[j];
+	  strr[j] = temp;
+	}
 }
-int main()
-{
-    char string[500];
-    printf("Digite uma string\n");
-    scanf("%s", string);
-    inverterString(string);
-    printf("%s\n", string);
-    return 0;
+
+int main(){
+	char strr[500];
+	printf("Digite a palavra\n");
+	scanf("%s",strr);
+	invertString(strr);
+	printf("%s\n",strr);
+	return 0;
+
 }
