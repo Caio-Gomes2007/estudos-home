@@ -1,29 +1,33 @@
 <?php
     class conta{
-        public $num1;
-        public $num2;
-        public $result;
+        private $num1;
+        private $num2;
+        private $result;
         function soma($num1,$num2){
             $this->num1 = $num1;
             $this->Num2 = $num2;
             $this-> result=$num1+$num2;
-            echo $this->result;
+	    echo $this->result;
+	    echo "\n";
         }
         function sub($num1,$num2){
             $this->num1 = $num1;
             $this->Num2 = $num2;
             $this-> result=$num1-$num2;
-            echo $this->result;
+	    echo $this->result;
+	    echo "\n";
         }function divi($num1,$num2){
             $this->num1 = $num1;
             $this->Num2 = $num2;
             $this-> result=$num1/$num2;
-            echo $this->result;
+	    echo $this->result;
+	    echo "\n";
         }function mult($num1,$num2){
             $this->num1 = $num1;
             $this->Num2 = $num2;
             $this-> result=$num1*$num2;
-            echo $this->result;
+	    echo $this->result;
+	    echo "\n";
         }
 
     }
