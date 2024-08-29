@@ -1,11 +1,11 @@
 <?php
 
 class ninja{
-	private $name;
-	private $idade;
-	private $aldeia;
+	protected $name;
+	protected $idade;
+	protected $aldeia;
 	
-	function __construct($name,$idade,$aldeia){
+	 function __construct($name,$idade,$aldeia){
 		$this->name=$name;
 		$this->idade=$idade;
 		$this->aldeia=$aldeia;
@@ -19,7 +19,7 @@ class ninja{
 
 class uchiha extends ninja{
 	
-	private $nivelTomoe;
+	protected $nivelTomoe;
 
 	function __construct($name,$idade,$aldeia,$nivelTomoe){
 		parent::__construct($name,$idade,$aldeia);
